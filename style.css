@@ -1,0 +1,186 @@
+:root {
+    --gold: #c5a059;
+    --dark: #0f0f0f;
+    --light: #f4f4f4;
+}
+
+body {
+    margin: 0; padding: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: var(--dark);
+    color: var(--light);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* CSS LOGO */
+.logo-container { display: flex; align-items: center; gap: 10px; }
+.css-logo {
+    background: var(--gold);
+    color: black;
+    padding: 4px 8px;
+    font-weight: 900;
+    font-size: 20px;
+    border-radius: 2px;
+}
+.logo-text { font-weight: 300; letter-spacing: 3px; font-size: 16px; }
+
+/* Navigation */
+nav {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 15px 5%; background: rgba(0,0,0,0.95);
+    position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid #222;
+}
+.nav-links { list-style: none; display: flex; gap: 25px; }
+.nav-links a { color: white; text-decoration: none; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; }
+
+/* Hamburger */
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+.hamburger span { width: 25px; height: 2px; background: white; }
+
+/* Hero */
+.hero {
+    height: 85vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/art14.jpg');
+    background-size: cover; background-position: center;
+    display: flex; justify-content: center; align-items: center; text-align: center;
+}
+.hero h1 { font-size: clamp(2rem, 8vw, 4rem); font-weight: 200; margin: 10px 0; }
+.location { color: var(--gold); text-transform: uppercase; letter-spacing: 3px; font-size: 12px; }
+
+/* 2x2 Grid Logic */
+#gallery { padding: 60px 5%; background: #080808; }
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Forced 2x2 on small screens */
+    gap: 15px;
+}
+
+@media (min-width: 800px) {
+    .gallery-grid { grid-template-columns: repeat(4, 1fr); gap: 25px; }
+}
+
+.art-card { background: #111; cursor: pointer; transition: 0.3s; }
+.img-holder { height: 200px; overflow: hidden; }
+.art-card img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
+.art-card:hover img { transform: scale(1.1); }
+.card-info { padding: 10px; text-align: center; }
+.card-info h3 { font-size: 12px; text-transform: uppercase; margin: 5px 0; }
+.card-info p { color: var(--gold); font-weight: bold; font-size: 14px; }
+
+/* About Section */
+.about-container { display: flex; flex-wrap: wrap; padding: 80px 10%; gap: 40px; align-items: center; }
+.about-img, .about-text { flex: 1; min-width: 300px; }
+.about-img img { width: 100%; border: 8px solid #1a1a1a; filter: contrast(110%); }
+
+/* Contact Form */
+.contact-card { max-width: 550px; margin: 40px auto; padding: 30px; background: #111; border: 1px solid #222; }
+input, textarea { width: 100%; padding: 12px; margin-bottom: 15px; background: #1a1a1a; border: 1px solid #333; color: white; }
+.btn-submit { width: 100%; padding: 15px; background: var(--gold); border: none; font-weight: bold; cursor: pointer; }
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+    .hamburger { display: flex; }
+    .nav-links {
+        display: none; flex-direction: column; position: absolute;
+        top: 60px; left: 0; width: 100%; background: black; padding: 20px; text-align: center;
+    }
+    .nav-links.active { display: flex; }
+}
+
+
+
+/* --- UPDATED MODAL SECTION --- */
+.modal { 
+    display: none; 
+    position: fixed; 
+    z-index: 2000; 
+    left: 0; top: 0; 
+    width: 100%; height: 100%; 
+    background: rgba(0,0,0,0.95); 
+    overflow-y: auto; /* Allows scrolling if the phone is very small */
+}
+
+.modal-content { 
+    background: #111; 
+    margin: 5% auto; 
+    padding: 40px 20px 20px 20px; /* Extra space at top for 'X' */
+    width: 95%; 
+    max-width: 900px; 
+    position: relative; 
+    border: 1px solid #222;
+}
+
+.modal-flex { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+.modal-img-box { 
+    flex: 1.2; 
+    min-width: 280px; 
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* THE MAGIC FIX: This keeps the art from being too tall */
+.modal-img-box img { 
+    width: 100%; 
+    max-height: 60vh; /* Limits height to 60% of screen */
+    object-fit: contain; /* Keeps painting shape perfect */
+    display: block;
+}
+
+.modal-info { 
+    flex: 1; 
+    min-width: 250px;
+}
+
+.close { 
+    position: absolute; 
+    right: 15px; top: 5px; 
+    font-size: 35px; 
+    color: #fff; 
+    cursor: pointer; 
+    z-index: 10;
+}
+
+.shipping-note {
+    font-size: 12px;
+    color: #888;
+    margin-top: 10px;
+}
+
+/* --- UPDATED FOOTER SECTION --- */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background: #000;
+    border-top: 1px solid #222;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.footer-contact a {
+    color: var(--gold);
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-contact a:hover {
+    color: white;
+}
