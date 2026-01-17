@@ -183,4 +183,35 @@ footer p {
 
 .footer-contact a:hover {
     color: white;
+
+}
+
+
+
+/* UNIVERSAL BUTTON STYLE - BOLD & GOLD */
+.btn, .btn-submit {
+    padding: 15px 35px;
+    background-color: #c5a059 !important; /* That specific Gold/Brown */
+    color: #000 !important; /* Black text for high contrast */
+    text-decoration: none !important;
+    display: inline-block;
+    font-weight: 900; /* Extra Bold */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 14px;
+    border-radius: 2px;
+}
+
+.btn:hover, .btn-submit:hover {
+    background-color: #e2be7a !important; /* Lighter gold on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Specific fix for the Hero "Browse Arts" button */
+.hero-btns .btn {
+    margin-top: 20px;
 }
