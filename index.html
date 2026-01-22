@@ -157,13 +157,22 @@
            <a href="tel:3369418880" style="color:var(--gold); text-decoration:none;">(336) 941-8889</a>
         </p>
         
-         <form action="https://formspree.io/f/ga.col2024@yahoo.com" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <input type="tel" name="phone" placeholder="Your Phone Number" required>
-            <textarea name="message" placeholder="I am interested in..." rows="4" required></textarea>
-            <button type="submit" class="btn-submit">Send Inquiry</button>
-        </form>
+        <!-- Updated to FormSubmit (The easy way) -->
+<form action="https://formsubmit.co/ga.col2024@yahoo.com" method="POST">
+    
+    <!-- This hidden input makes a custom subject line so she knows it's a sale! -->
+    <input type="hidden" name="_subject" value="New Art Inquiry from GA Col Studio!">
+    
+    <!-- This hidden input removes the annoying captcha if you want -->
+    <input type="hidden" name="_captcha" value="false">
+
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="tel" name="phone" placeholder="Your Phone Number" required>
+    <textarea name="message" placeholder="I am interested in the painting titled..." rows="4" required></textarea>
+    
+    <button type="submit" class="btn-submit">Send Inquiry</button>
+</form>
     </div>
 </section>
 
@@ -212,4 +221,5 @@ s0.parentNode.insertBefore(s1,s0);
 </body>
 
 </html>
+
 
