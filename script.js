@@ -6,29 +6,39 @@ hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
 
-// Art Modal Logic
+// Original Art Modal
 function openModal(image, title, desc, price) {
     const modal = document.getElementById("artModal");
     const modalImg = document.getElementById("modalImg");
-    const modalTitle = document.getElementById("modalTitle");
-    const modalDesc = document.getElementById("modalDesc");
-    const modalPrice = document.getElementById("modalPrice");
-
-    modal.style.display = "block";
+    document.getElementById("modalTitle").innerText = title;
+    document.getElementById("modalDesc").innerText = desc;
+    document.getElementById("modalPrice").innerText = price;
     modalImg.src = "images/" + image;
-    modalTitle.innerText = title;
-    modalDesc.innerText = desc;
-    modalPrice.innerText = price;
-    
-    document.body.style.overflow = "hidden"; // Stop scroll
+    modal.style.display = "block";
+    document.body.style.overflow = "hidden";
 }
 
 function closeModal() {
     document.getElementById("artModal").style.display = "none";
-    document.body.style.overflow = "auto"; // Enable scroll
+    document.body.style.overflow = "auto";
 }
 
+// Digital Modal
+function openDigitalModal(title) {
+    document.getElementById("digiTitle").innerText = "Digital Scan: " + title;
+    document.getElementById("digitalModal").style.display = "block";
+    document.body.style.overflow = "hidden";
+}
+
+function closeDigitalModal() {
+    document.getElementById("digitalModal").style.display = "none";
+    document.body.style.overflow = "auto";
+}
+
+// Global Click Close
 window.onclick = function(event) {
-    const modal = document.getElementById("artModal");
-    if (event.target == modal) { closeModal(); }
+    const artM = document.getElementById("artModal");
+    const digiM = document.getElementById("digitalModal");
+    if (event.target == artM) closeModal();
+    if (event.target == digiM) closeDigitalModal();
 }
