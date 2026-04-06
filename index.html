@@ -242,25 +242,29 @@
     </div>
 </section>
 
-<!-- About Section -->
+<!-- Merged Artist & Contact Sections -->
 <section id="about">
     <div class="about-container">
         <div class="about-img">
-            <img src="images/ga.jpg" alt="The Artist GA"> 
+            <!-- This is the guitar photo -->
+            <img src="images/ga4.jpg" alt="The Artist GA"> 
         </div>
         <div class="about-text">
             <h2>Meet the Artist</h2>
-            <p>Welcome to GA Col Studio. Based in Elkin, NC, I create abstract expressionist works that explore emotion, faith, and color.</p>
-            <p>Every canvas is an original journey, painted with passion. <i>"I paint the things I cannot say."</i></p>
+            <div class="line" style="margin: 0 0 20px 0;"></div>
+            <p>Welcome to GA Col Studio. Based in Elkin, NC, I create abstract expressionist works that explore emotion, faith, and color. My work is raw, unfiltered, and designed to bring energy into your space.</p>
+            <p>Every canvas is an original journey, painted with passion. <br><i>"I paint the things I cannot say."</i></p>
         </div>
     </div>
 </section>
 
-<!-- Contact Section (Merged FormSubmit) -->
 <section id="contact">
     <div class="contact-card">
         <h2>Inquire About a Piece</h2>
-        <p>Contact: <a href="mailto:ga.col2024@yahoo.com">ga.col2024@yahoo.com</a> | 336.941.8889</p>
+        <p>Contact the Studio: <br>
+           <a href="mailto:ga.col2024@yahoo.com" style="color:var(--gold); text-decoration:none;">ga.col2024@yahoo.com</a> | 
+           <a href="tel:3369418889" style="color:var(--gold); text-decoration:none;">(336) 941-8889</a>
+        </p>
         
         <form action="https://formsubmit.co/grettaprevette4@outlook.com" method="POST">
             <input type="hidden" name="_subject" value="New Art Inquiry from GA Col Studio!">
@@ -268,12 +272,13 @@
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <input type="tel" name="phone" placeholder="Phone Number">
-            <textarea name="message" placeholder="I am interested in..." rows="4" required></textarea>
+            <textarea name="message" placeholder="Which piece are you interested in?" rows="4" required></textarea>
             <button type="submit" class="btn-submit">Send Inquiry</button>
         </form>
     </div>
 </section>
 
+    
 <footer>
     <p>GA Col Studio | Elkin, North Carolina</p>
     <div class="footer-contact">
