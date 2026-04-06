@@ -1,12 +1,29 @@
+// View Switcher Logic
+function showView(viewId) {
+    // Hide all views
+    const views = document.querySelectorAll('.view');
+    views.forEach(view => {
+        view.style.display = 'none';
+    });
+
+    // Show the selected view
+    document.getElementById('view-' + viewId).style.display = 'block';
+
+    // Close mobile menu after clicking
+    document.getElementById('nav-links').classList.remove('active');
+
+    // Scroll to top
+    window.scrollTo(0, 0);
+}
+
 // Hamburger Toggle
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('nav-links');
-
 hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
 
-// Original Art Modal
+// Modal Logic
 function openModal(image, title, desc, price) {
     const modal = document.getElementById("artModal");
     const modalImg = document.getElementById("modalImg");
@@ -23,9 +40,7 @@ function closeModal() {
     document.body.style.overflow = "auto";
 }
 
-// Digital Modal
 function openDigitalModal(title) {
-    document.getElementById("digiTitle").innerText = "Digital Scan: " + title;
     document.getElementById("digitalModal").style.display = "block";
     document.body.style.overflow = "hidden";
 }
@@ -35,7 +50,7 @@ function closeDigitalModal() {
     document.body.style.overflow = "auto";
 }
 
-// Global Click Close
+// Global click to close modals
 window.onclick = function(event) {
     const artM = document.getElementById("artModal");
     const digiM = document.getElementById("digitalModal");
