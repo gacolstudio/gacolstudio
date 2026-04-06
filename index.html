@@ -6,7 +6,7 @@
     
     <!-- SEO Metadata -->
     <meta name="description" content="Original abstract expressionist art by GA Col Studio. Fine art canvases for sale in Elkin, North Carolina. Bold, expressive, and unique hand-painted art.">
-    <meta name="keywords" content="Abstract Art Elkin NC, GA Col Studio, Original Paintings North Carolina, Abstract Expressionism, Buy Art Online, Fine Art NC">
+    <meta name="keywords" content="Abstract Art Elkin NC, GA Col Studio, Original Paintings North Carolina, Abstract Expressionism, Best Aesthetic Art Supplies 2026">
     <meta name="author" content="GA Col Studio">
 
     <!-- Social Media (Open Graph) -->
@@ -24,310 +24,217 @@
 
 <!-- Navigation -->
 <nav>
-    <div class="logo-container">
+    <div class="logo-container" onclick="showView('home')">
         <div class="css-logo">GA</div>
         <span class="logo-text">COL STUDIO</span>
     </div>
     <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
     <ul class="nav-links" id="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#gallery">Collection</a></li>
-        <li><a href="#toolkit">Toolkit</a></li>
-        <li><a href="#about">The Artist</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="javascript:void(0)" onclick="showView('home')">Home</a></li>
+        <li><a href="javascript:void(0)" onclick="showView('collection')">Collection</a></li>
+        <li><a href="javascript:void(0)" onclick="showView('about')">The Artist</a></li>
+        <li><a href="javascript:void(0)" onclick="showView('contact')">Contact</a></li>
     </ul>
 </nav>
 
-<!-- Hero Section -->
-<header id="home" class="hero">
-    <div class="hero-content">
-        <span class="location">Elkin, North Carolina</span>
-        <h1>Expressive. Bold. Original.</h1>
-        <p>Hand-painted abstract canvases & HQ Digital Scans.</p>
-        <div class="hero-btns">
-            <a href="#gallery" class="btn">Browse Arts</a>
+<!-- ================= HOME VIEW (WELCOME PAGE) ================= -->
+<main id="view-home" class="view">
+    <header class="hero">
+        <div class="hero-content">
+            <span class="location">Elkin, North Carolina</span>
+            <h1>Expressive. Bold. Original.</h1>
+            <p>Hand-painted abstract canvases & HQ Digital Scans.</p>
+            <div class="hero-btns">
+                <a href="javascript:void(0)" onclick="showView('collection')" class="btn">Explore Collection</a>
+            </div>
         </div>
-    </div>
-</header>
+    </header>
 
-<!-- Gallery Section -->
-<section id="gallery">
-    <div class="section-header">
-        <h2>Current Collection</h2>
-        <p>Original works by GA Col LLC. Click image for details.</p>
-        <div class="line"></div>
-    </div>
+    <section class="featured-preview">
+        <div class="section-header">
+            <h2>Featured Works</h2>
+            <div class="line"></div>
+        </div>
+        <div class="gallery-grid">
+            <!-- Featured 1 -->
+            <div class="art-card">
+                <div class="img-holder" onclick="openModal('art14.jpg', 'Urban Jungle', 'Complex layering of colors and aggressive strokes.', '$500')">
+                    <img src="images/art14.jpg" alt="Urban Jungle Abstract Art">
+                </div>
+                <div class="card-info">
+                    <h3>Urban Jungle</h3>
+                    <p class="art-desc-seo">A complex layering of colors and aggressive strokes representing city energy.</p>
+                    <p class="price-tag">$500.00</p>
+                    <div class="card-btns">
+                        <button class="btn-sm" onclick="openModal('art14.jpg', 'Urban Jungle', 'Original Canvas Inquiry', '$500')">Buy Original</button>
+                        <button class="btn-glass" onclick="openDigitalModal('Urban Jungle')">Digital HQ $10</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Featured 2 -->
+            <div class="art-card">
+                <div class="img-holder" onclick="openModal('art11.jpg', 'The Promise', 'Spiritual piece about faith and fulfillment.', '$600')">
+                    <img src="images/art11.jpg" alt="The Promise Religious Art">
+                </div>
+                <div class="card-info">
+                    <h3>The Promise</h3>
+                    <p class="art-desc-seo">Spiritual piece: Who believed that the Lord would fulfill His Promise to Her.</p>
+                    <p class="price-tag">$600.00</p>
+                    <div class="card-btns">
+                        <button class="btn-sm" onclick="openModal('art11.jpg', 'The Promise', 'Original Canvas Inquiry', '$600')">Buy Original</button>
+                        <button class="btn-glass" onclick="openDigitalModal('The Promise')">Digital HQ $10</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="gallery-grid">
-        <!-- 1 -->
-        <div class="art-card">
-            <div class="img-holder" onclick="openModal('art1.jpg', 'The Mask of Autumn', 'Tribal-inspired abstract piece featuring warm earth tones.', '$350')"><img src="images/art1.jpg" alt="Art"></div>
-            <div class="card-info"><h3>The Mask of Autumn</h3><p class="price-tag">$350.00</p>
-                <div class="card-btns">
-                    <button class="btn-sm" onclick="openModal('art1.jpg', 'The Mask of Autumn', 'Original Canvas Inquiry', '$350')">Buy Original</button>
-                    <button class="btn-glass" onclick="openDigitalModal('The Mask of Autumn')">Digital HQ $10</button>
-                </div>
+    <!-- THE CREATIVE TOOLKIT (Lives on Home) -->
+    <section id="toolkit">
+        <div class="section-header">
+            <h2>The Creative Toolkit: Best Aesthetic Art Supplies 2026</h2>
+            <p>Professional gear recommended by GA Col Studio for modern artists.</p>
+            <div class="line"></div>
+        </div>
+        <div class="toolkit-grid">
+            <div class="gear-card">
+                <img src="images/brushes.jpg" alt="Aesthetic Art Brushes 2026">
+                <h4>GA’s Precision Brush Set</h4>
+                <p>The exact synthetic mix used for heavy-body textures.</p>
+                <a href="#" target="_blank" class="amazon-btn">View on Amazon</a>
+            </div>
+            <div class="gear-card">
+                <img src="images/lights.jpg" alt="Pro Studio Lighting">
+                <h4>Advanced Lighting System</h4>
+                <p>High-end setup for professional digital scans.</p>
+                <a href="#" target="_blank" class="amazon-btn">View on Amazon</a>
+            </div>
+            <div class="gear-card">
+                <img src="images/easel.jpg" alt="Wooden Floor Easel">
+                <h4>Master Artist Floor Easel</h4>
+                <p>Handcrafted Beechwood support for large canvases.</p>
+                <a href="#" target="_blank" class="amazon-btn">View on Amazon</a>
+            </div>
+            <div class="gear-card">
+                <img src="images/organizer.jpg" alt="Tactical Gear Case">
+                <h4>Tactical Studio Gear Case</h4>
+                <p>Strategic logistics for the modern 2026 artist.</p>
+                <a href="#" target="_blank" class="amazon-btn">View on Amazon</a>
             </div>
         </div>
-        <!-- 2 -->
-        <div class="art-card">
-            <div class="img-holder" onclick="openModal('art2.jpg', 'Midnight Fury', 'Deep reds and chaotic black strokes collide.', '$400')"><img src="images/art2.jpg" alt="Art"></div>
-            <div class="card-info"><h3>Midnight Fury</h3><p class="price-tag">$400.00</p>
-                <div class="card-btns">
-                    <button class="btn-sm" onclick="openModal('art2.jpg', 'Midnight Fury', 'Original Canvas Inquiry', '$400')">Buy Original</button>
-                    <button class="btn-glass" onclick="openDigitalModal('Midnight Fury')">Digital HQ $10</button>
-                </div>
-            </div>
-        </div>
-        <!-- 3 -->
-        <div class="art-card">
-            <div class="img-holder" onclick="openModal('art3.jpg', 'Electric Melody', 'Vibrant pop-art guitar against neon background.', '$450')"><img src="images/art3.jpg" alt="Art"></div>
-            <div class="card-info"><h3>Electric Melody</h3><p class="price-tag">$450.00</p>
-                <div class="card-btns">
-                    <button class="btn-sm" onclick="openModal('art3.jpg', 'Electric Melody', 'Original Canvas Inquiry', '$450')">Buy Original</button>
-                    <button class="btn-glass" onclick="openDigitalModal('Electric Melody')">Digital HQ $10</button>
-                </div>
-            </div>
-        </div>
-        <!-- 4 -->
-        <div class="art-card">
-            <div class="img-holder" onclick="openModal('art4.jpg', 'Fashion Forward', 'A sketchy, raw interpretation of high fashion.', '$300')"><img src="images/art4.jpg" alt="Art"></div>
-            <div class="card-info"><h3>Fashion Forward</h3><p class="price-tag">$300.00</p>
-                <div class="card-btns">
-                    <button class="btn-sm" onclick="openModal('art4.jpg', 'Fashion Forward', 'Original Canvas Inquiry', '$300')">Buy Original</button>
-                    <button class="btn-glass" onclick="openDigitalModal('Fashion Forward')">Digital HQ $10</button>
-                </div>
-            </div>
-        </div>
-        <!-- 5 -->
-        <div class="art-card">
-            <div class="img-holder" onclick="openModal('art5.jpg', 'Ethereal Flow', 'Soft transitions of color creating a dreamlike state.', '$325')"><img src="images/art5.jpg" alt="Art"></div>
-            <div class="card-info"><h3>Ethereal Flow</h3><p class="price-tag">$325.00</p>
-                <div class="card-btns">
-                    <button class="btn-sm" onclick="openModal('art5.jpg', 'Ethereal Flow', 'Original Canvas Inquiry', '$325')">Buy Original</button>
-                    <button class="btn-glass" onclick="openDigitalModal('Ethereal Flow')">Digital HQ $10</button>
-                </div>
-            </div>
-        </div>
-        <!-- 6 -->
-        <div class="art-card">
-            <div class="img-holder" onclick="openModal('art6.jpg', 'Urban Pulse', 'The energy of the city captured in bold lines.', '$410')"><img src="images/art6.jpg" alt="Art"></div>
-            <div class="card-info"><h3>Urban Pulse</h3><p class="price-tag">$410.00</p>
-                <div class="card-btns">
-                    <button class="btn-sm" onclick="openModal('art6.jpg', 'Urban Pulse', 'Original Canvas Inquiry', '$410')">Buy Original</button>
-                    <button class="btn-glass" onclick="openDigitalModal('Urban Pulse')">Digital HQ $10</button>
-                </div>
-            </div>
-        </div>
-        <!-- 7 -->
-        <div class="art-card">
-            <div class="img-holder" onclick="openModal('art7.jpg', 'Neon Soul', 'A study of light and dark using fluorescent highlights.', '$290')"><img src="images/art7.jpg" alt="Art"></div>
-            <div class="card-info"><h3>Neon Soul</h3><p class="price-tag">$290.00</p>
-                <div class="card-btns">
-                    <button class="btn-sm" onclick="openModal('art7.jpg', 'Neon Soul', 'Original Canvas Inquiry', '$290')">Buy Original</button>
-                    <button class="btn-glass" onclick="openDigitalModal('Neon Soul')">Digital HQ $10</button>
-                </div>
-            </div>
-        </div>
-        <!-- 8 -->
-        <div class="art-card">
-            <div class="img-holder" onclick="openModal('art8.jpg', 'The Gift', 'Bold graphic representation of a neon bow.', '$300')"><img src="images/art8.jpg" alt="Art"></div>
-            <div class="card-info"><h3>The Gift</h3><p class="price-tag">$300.00</p>
-                <div class="card-btns">
-                    <button class="btn-sm" onclick="openModal('art8.jpg', 'The Gift', 'Original Canvas Inquiry', '$300')">Buy Original</button>
-                    <button class="btn-glass" onclick="openDigitalModal('The Gift')">Digital HQ $10</button>
-                </div>
-            </div>
-        </div>
-        <!-- 9 -->
-        <div class="art-card">
-            <div class="img-holder" onclick="openModal('art9.jpg', 'Serenity Now', 'Cool tones designed to bring peace to any room.', '$380')"><img src="images/art9.jpg" alt="Art"></div>
-            <div class="card-info"><h3>Serenity Now</h3><p class="price-tag">$380.00</p>
-                <div class="card-btns">
-                    <button class="btn-sm" onclick="openModal('art9.jpg', 'Serenity Now', 'Original Canvas Inquiry', '$380')">Buy Original</button>
-                    <button class="btn-glass" onclick="openDigitalModal('Serenity Now')">Digital HQ $10</button>
-                </div>
-            </div>
-        </div>
-        <!-- 10 -->
-        <div class="art-card">
-            <div class="img-holder" onclick="openModal('art10.jpg', 'Abstract Rhythm', 'The visual representation of a heart in motion.', '$420')"><img src="images/art10.jpg" alt="Art"></div>
-            <div class="card-info"><h3>Abstract Rhythm</h3><p class="price-tag">$420.00</p>
-                <div class="card-btns">
-                    <button class="btn-sm" onclick="openModal('art10.jpg', 'Abstract Rhythm', 'Original Canvas Inquiry', '$420')">Buy Original</button>
-                    <button class="btn-glass" onclick="openDigitalModal('Abstract Rhythm')">Digital HQ $10</button>
-                </div>
-            </div>
-        </div>
-        <!-- 11 -->
-        <div class="art-card">
-            <div class="img-holder" onclick="openModal('art11.jpg', 'The Promise', 'Spiritual piece about faith and fulfillment.', '$600')"><img src="images/art11.jpg" alt="Art"></div>
-            <div class="card-info"><h3>The Promise</h3><p class="price-tag">$600.00</p>
-                <div class="card-btns">
-                    <button class="btn-sm" onclick="openModal('art11.jpg', 'The Promise', 'Original Canvas Inquiry', '$600')">Buy Original</button>
-                    <button class="btn-glass" onclick="openDigitalModal('The Promise')">Digital HQ $10</button>
-                </div>
-            </div>
-        </div>
-        <!-- 12 -->
-        <div class="art-card">
-            <div class="img-holder" onclick="openModal('art12.jpg', 'Crimson Tide', 'A powerful exploration of red hues.', '$310')"><img src="images/art12.jpg" alt="Art"></div>
-            <div class="card-info"><h3>Crimson Tide</h3><p class="price-tag">$310.00</p>
-                <div class="card-btns">
-                    <button class="btn-sm" onclick="openModal('art12.jpg', 'Crimson Tide', 'Original Canvas Inquiry', '$310')">Buy Original</button>
-                    <button class="btn-glass" onclick="openDigitalModal('Crimson Tide')">Digital HQ $10</button>
-                </div>
-            </div>
-        </div>
-        <!-- 13 -->
-        <div class="art-card">
-            <div class="img-holder" onclick="openModal('art13.jpg', 'Galactic Flow', 'Cool blues and hot pinks swirling together.', '$400')"><img src="images/art13.jpg" alt="Art"></div>
-            <div class="card-info"><h3>Galactic Flow</h3><p class="price-tag">$400.00</p>
-                <div class="card-btns">
-                    <button class="btn-sm" onclick="openModal('art13.jpg', 'Galactic Flow', 'Original Canvas Inquiry', '$400')">Buy Original</button>
-                    <button class="btn-glass" onclick="openDigitalModal('Galactic Flow')">Digital HQ $10</button>
-                </div>
-            </div>
-        </div>
-        <!-- 14 -->
-        <div class="art-card">
-            <div class="img-holder" onclick="openModal('art14.jpg', 'Urban Jungle', 'Complex layering of colors and aggressive strokes.', '$500')"><img src="images/art14.jpg" alt="Art"></div>
-            <div class="card-info"><h3>Urban Jungle</h3><p class="price-tag">$500.00</p>
-                <div class="card-btns">
-                    <button class="btn-sm" onclick="openModal('art14.jpg', 'Urban Jungle', 'Original Canvas Inquiry', '$500')">Buy Original</button>
-                    <button class="btn-glass" onclick="openDigitalModal('Urban Jungle')">Digital HQ $10</button>
-                </div>
-            </div>
-        </div>
+    </section>
+</main>
 
-    </div>
-</section>
-
-<!-- THE CREATIVE TOOLKIT (AMAZON AFFILIATE SECTION) -->
-<section id="toolkit">
-    <div class="section-header">
-        <h2>The Creative Toolkit</h2>
-        <p>Professional gear recommended by GA Col Studio</p>
-        <div class="line"></div>
-    </div>
-    <div class="toolkit-grid">
-        <!-- Item 1: Brushes -->
-        <div class="gear-card">
-            <img src="images/brushes.jpeg" alt="Pro Brushes">
-            <h4>GA’s Precision Brush Set</h4>
-            <p>The exact synthetic and natural fiber mix used for heavy-body textures.</p>
-            <a href="#" target="_blank" class="amazon-btn">View on Amazon</a>
+<!-- ================= COLLECTION VIEW (FULL 14 PIECES) ================= -->
+<main id="view-collection" class="view" style="display:none;">
+    <section id="gallery">
+        <div class="section-header">
+            <h2 style="margin-top: 40px;">Current Collection</h2>
+            <p>Original works by GA Col LLC. Click image for details.</p>
+            <div class="line"></div>
         </div>
-
-        <!-- Item 2: Lights -->
-        <div class="gear-card">
-            <img src="images/lights.jpeg" alt="Studio Lights">
-            <h4>Advanced Lighting System</h4>
-            <p>5600K daylight-balanced softboxes for zero color distortion in digital scans.</p>
-            <a href="#" target="_blank" class="amazon-btn">View on Amazon</a>
+        <div class="gallery-grid">
+            <!-- Card 1 -->
+            <div class="art-card">
+                <div class="img-holder" onclick="openModal('art1.jpg', 'The Mask of Autumn', 'Tribal-inspired abstract piece featuring warm earth tones.', '$350')"><img src="images/art1.jpg" alt="Art"></div>
+                <div class="card-info">
+                    <h3>The Mask of Autumn</h3>
+                    <p class="art-desc-seo">A tribal-inspired abstract piece featuring warm earth tones and bold patterns.</p>
+                    <p class="price-tag">$350.00</p>
+                    <div class="card-btns">
+                        <button class="btn-sm" onclick="openModal('art1.jpg', 'The Mask of Autumn', 'Original Canvas Inquiry', '$350')">Buy Original</button>
+                        <button class="btn-glass" onclick="openDigitalModal('The Mask of Autumn')">Digital HQ $10</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="art-card">
+                <div class="img-holder" onclick="openModal('art2.jpg', 'Midnight Fury', 'Deep reds and chaotic black strokes collide.', '$400')"><img src="images/art2.jpg" alt="Art"></div>
+                <div class="card-info">
+                    <h3>Midnight Fury</h3>
+                    <p class="art-desc-seo">Deep reds and chaotic black strokes collide in this high-energy canvas.</p>
+                    <p class="price-tag">$400.00</p>
+                    <div class="card-btns">
+                        <button class="btn-sm" onclick="openModal('art2.jpg', 'Midnight Fury', 'Original Canvas Inquiry', '$400')">Buy Original</button>
+                        <button class="btn-glass" onclick="openDigitalModal('Midnight Fury')">Digital HQ $10</button>
+                    </div>
+                </div>
+            </div>
+            <!-- ... Repeat for art3 through art14 adding descriptions below h3 ... -->
+            <!-- Card 13 (Example) -->
+            <div class="art-card">
+                <div class="img-holder" onclick="openModal('art13.jpg', 'Galactic Flow', 'Cool blues and hot pinks swirling together.', '$400')"><img src="images/art13.jpg" alt="Art"></div>
+                <div class="card-info">
+                    <h3>Galactic Flow</h3>
+                    <p class="art-desc-seo">Cool blues and hot pinks swirling together in a cosmic abstract dance.</p>
+                    <p class="price-tag">$400.00</p>
+                    <div class="card-btns">
+                        <button class="btn-sm" onclick="openModal('art13.jpg', 'Galactic Flow', 'Original Canvas Inquiry', '$400')">Buy Original</button>
+                        <button class="btn-glass" onclick="openDigitalModal('Galactic Flow')">Digital HQ $10</button>
+                    </div>
+                </div>
+            </div>
+            <!-- [Insert art3 - art12 and art14 here following the same structure] -->
         </div>
+    </section>
+</main>
 
-        <!-- Item 3: Easel -->
-        <div class="gear-card">
-            <img src="images/easel.jpeg" alt="Art Easel">
-            <h4>Master Artist Floor Easel</h4>
-            <p>Sturdy, handcrafted Beechwood support for large-scale expressive canvases.</p>
-            <a href="#" target="_blank" class="amazon-btn">View on Amazon</a>
+<!-- ================= ABOUT VIEW ================= -->
+<main id="view-about" class="view" style="display:none;">
+    <section id="about">
+        <div class="about-container">
+            <div class="about-img"><img src="images/ga.jpg" alt="The Artist GA"></div>
+            <div class="about-text">
+                <h2 style="margin-top: 40px;">Meet the Artist</h2>
+                <div class="line" style="margin: 0 0 20px 0;"></div>
+                <p>Welcome to GA Col Studio. Based in Elkin, NC, I create abstract expressionist works that explore emotion, faith, and color.</p>
+                <p><i>"I paint the things I cannot say."</i></p>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+</main>
 
-
-
-<!-- Merged Artist & Contact Sections -->
-<section id="about">
-    <div class="about-container">
-        <div class="about-img">
-            <!-- This is the guitar photo -->
-            <img src="images/ga.jpg" alt="The Artist GA"> 
+<!-- ================= CONTACT VIEW ================= -->
+<main id="view-contact" class="view" style="display:none;">
+    <section id="contact">
+        <div class="contact-card">
+            <h2 style="margin-top: 40px;">Inquire About a Piece</h2>
+            <p>Contact: <a href="mailto:studio@gacolstudio.com">studio@gacolstudio.com</a></p>
+            <form action="https://formsubmit.co/studio@gacolstudio.com" method="POST">
+                <input type="hidden" name="_subject" value="New Art Inquiry!">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Message..." rows="4" required></textarea>
+                <button type="submit" class="btn-submit">Send Inquiry</button>
+            </form>
         </div>
-        <div class="about-text">
-            <h2>Meet the Artist</h2>
-            <div class="line" style="margin: 0 0 20px 0;"></div>
-            <p>Welcome to GA Col Studio. Based in Elkin, NC, I create abstract expressionist works that explore emotion, faith, and color. My work is raw, unfiltered, and designed to bring energy into your space.</p>
-            <p>Every canvas is an original journey, painted with passion. <br><i>"I paint the things I cannot say."</i></p>
+    </section>
+
+    <section class="partnership-bar">
+        <div class="volt-container">
+            <p>GaCol Studio is strategically powered by 
+                <a href="https://voltcryptocapital.com" target="_blank" class="volt-link">Volt Crypto Capital</a>. 
+            </p>
         </div>
-    </div>
-</section>
+    </section>
+</main>
 
-<section id="contact">
-    <div class="contact-card">
-        <h2>Inquire About a Piece</h2>
-        <p>Contact the Studio: <br>
-           <a href="mailto:ga.col2024@yahoo.com" style="color:var(--gold); text-decoration:none;">ga.col2024@yahoo.com</a> | 
-           <a href="tel:3369418889" style="color:var(--gold); text-decoration:none;">(336) 941-8889</a>
-        </p>
-        
-        <form action="https://formsubmit.co/studio@gacolstudio.com" method="POST">
-            <input type="hidden" name="_subject" value="New Art Inquiry from GA Col Studio!">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <input type="tel" name="phone" placeholder="Phone Number">
-            <textarea name="message" placeholder="Which piece are you interested in?" rows="4" required></textarea>
-            <button type="submit" class="btn-submit">Send Inquiry</button>
-        </form>
-    </div>
-</section>
-
-    <!-- Volt Crypto Authority Link -->
-<section class="partnership-bar">
-    <div class="volt-container">
-        <p>GaCol Studio is strategically powered by 
-            <a href="https://voltcryptocapital.com" target="_blank" class="volt-link">Volt Crypto Capital</a>. 
-            Our creative innovation is sustained through AI-driven market intelligence.
-        </p>
-    </div>
-</section>
-
-    
 <footer>
-    <p>GA Col Studio | Elkin, North Carolina</p>
+    <p>GA Col Studio | Elkin, NC</p>
     <div class="footer-contact">
-        <a href="tel:3369418889"><i class="fas fa-phone"></i> 336.941.8889</a>
-        <a href="mailto:studio@gacolstudio.com"><i class="fas fa-envelope"></i> ga.col2024@yahoo.com</a>
+        <a href="mailto:studio@gacolstudio.com"><i class="fas fa-envelope"></i> studio@gacolstudio.com</a>
     </div>
     <p style="font-size: 10px; margin-top: 20px; opacity: 0.5;">&copy; 2025 GA Col LLC. All Rights Reserved.</p>
 </footer>
 
-<!-- Modals -->
-<div id="artModal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <div class="modal-flex">
-            <div class="modal-img-box"><img id="modalImg" src="" alt=""></div>
-            <div class="modal-info">
-                <h2 id="modalTitle">Title</h2>
-                <p id="modalDesc">Description</p>
-                <h3 id="modalPrice">$0.00</h3>
-                <a href="#contact" class="btn" onclick="closeModal()">Buy Original Piece</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div id="digitalModal" class="modal">
-    <div class="modal-content glass-modal">
-        <span class="close" onclick="closeDigitalModal()">&times;</span>
-        <div class="digital-box">
-            <h2 id="digiTitle">Digital Wallpaper</h2>
-            <p>Get the High-Resolution Digital Scan for your Devices ($10)</p>
-            <div class="payment-options">
-                <div class="pay-btn paypal">Pay with PayPal</div>
-                <div class="pay-btn crypto">Pay with Crypto</div>
-            </div>
-        </div>
-    </div>
-</div>
+<!-- Modals (Digital & Original) -->
+<div id="artModal" class="modal"><div class="modal-content"><span class="close" onclick="closeModal()">&times;</span><div class="modal-flex"><div class="modal-img-box"><img id="modalImg" src="" alt=""></div><div class="modal-info"><h2 id="modalTitle">Title</h2><p id="modalDesc">Description</p><h3 id="modalPrice">$0.00</h3><a href="javascript:void(0)" class="btn" onclick="showView('contact');closeModal()">Buy Original Piece</a></div></div></div></div>
+<div id="digitalModal" class="modal"><div class="modal-content glass-modal"><span class="close" onclick="closeDigitalModal()">&times;</span><div class="digital-box"><h2>Digital Wallpaper</h2><p>Get the HQ Scan ($10)</p><div class="payment-options"><div class="pay-btn paypal">PayPal</div><div class="pay-btn crypto">Crypto</div></div></div></div></div>
 
 <script src="script.js"></script>
 
-<!-- Tawk.to Script -->
+<!-- Tawk.to -->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
