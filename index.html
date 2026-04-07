@@ -416,50 +416,47 @@
     </section>
 </main>
 
-<!-- ================= CONTACT VIEW ================= -->
+<!-- ================= CONTACT VIEW (CLEANED & POLISHED) ================= -->
 <main id="view-contact" class="view" style="display:none;">
+    
     <section id="contact">
         <div class="contact-card">
-            <h2 style="margin-top: 40px;">Inquire About a Piece</h2>
-            <p>Contact: <a href="mailto:studio@gacolstudio.com">studio@gacolstudio.com</a></p>
+            <!-- 1. THE MAP BOX -->
+            <h2 style="margin-top: 20px;">Studio Location</h2>
+            <div class="map-container" style="margin: 20px 0; border: 1px solid #333; line-height: 0; overflow: hidden; border-radius: 4px;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12882.527376046736!2d-80.8576426315579!3d36.24831633519808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8851756540c9509d%3A0xe549557458097f4a!2sElkin%2C%20NC%2028621!5e0!3m2!1sen!2sus!4v1711234567890!5m2!1sen!2sus" 
+                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <!-- 2. INQUIRY INFO -->
+            <h2>Inquire About a Piece</h2>
+            <p style="margin-bottom: 20px;">Studio: <a href="mailto:studio@gacolstudio.com" style="color:var(--gold); text-decoration:none;">studio@gacolstudio.com</a></p>
+            
+            <!-- 3. THE FORM -->
             <form action="https://formsubmit.co/studio@gacolstudio.com" method="POST">
-                <input type="hidden" name="_subject" value="New Art Inquiry!">
+                <input type="hidden" name="_subject" value="New Art Inquiry from GAColStudio.com">
                 <input type="hidden" name="_captcha" value="false">
+                
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Message..." rows="4" required></textarea>
+                <textarea name="message" placeholder="Which painting or digital scan are you interested in?" rows="4" required></textarea>
+                
                 <button type="submit" class="btn-submit">Send Inquiry</button>
             </form>
         </div>
     </section>
 
-    <!-- CONTACT VIEW -->
-<main id="view-contact" class="view" style="display:none;">
-    <section id="contact">
-        <div class="contact-card">
-            <h2>Visit the Studio Area</h2>
-            <!-- Google Maps Embed for Elkin, NC -->
-            <div class="map-container" style="margin-bottom: 20px; border: 1px solid #222;">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m12!1m3!1d12882.527376046736!2d-80.8576426315579!3d36.24831633519808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8851756540c9509d%3A0xe549557458097f4a!2sElkin%2C%20NC%2028621!5e0!3m2!1sen!2sus!4v1711234567890!5m2!1sen!2sus" 
-                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-
-            <h2>Inquire About a Piece</h2>
-            <p>Contact: <a href="mailto:studio@gacolstudio.com">studio@gacolstudio.com</a></p>
-            <!-- FORM CODE HERE -->
-        </div>
-    </section>
-</main>
-
+    <!-- 4. VOLT PARTNERSHIP (Sub-Footer) -->
     <section class="partnership-bar">
         <div class="volt-container">
-            <p>GaCol Studio is strategically powered by 
+            <p>GA Col Studio is strategically powered by 
                 <a href="https://voltcryptocapital.com" target="_blank" class="volt-link">Volt Crypto Capital</a>. 
+                Creative innovation sustained through AI-driven market intelligence.
             </p>
         </div>
     </section>
-</main>
 
+</main>
 <footer>
     <p>GA Col Studio | Elkin, NC</p>
     <div class="footer-contact">
