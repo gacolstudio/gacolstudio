@@ -1,24 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO Metadata -->
+    <!-- Standard SEO -->
     <meta name="description" content="Original abstract expressionist art by GA Col Studio. Fine art canvases for sale in Elkin, North Carolina. Bold, expressive, and unique hand-painted art.">
-    <meta name="keywords" content="Abstract Art Elkin NC, GA Col Studio, Original Paintings North Carolina, Abstract Expressionism, Best Aesthetic Art Supplies 2026">
+    <meta name="keywords" content="Abstract Art Elkin NC, GA Col Studio, Original Paintings North Carolina, Abstract Expressionism, Best Aesthetic Art Supplies 2026, Volt Crypto Capital">
     <meta name="author" content="GA Col Studio">
 
-    <!-- Social Media (Open Graph) -->
+    <!-- Social Media (Open Graph) - Updated to your .com -->
     <meta property="og:title" content="GA Col Studio | Fine Abstract Art">
     <meta property="og:description" content="Explore original abstract canvases hand-painted in Elkin, NC. Discover bold energy for your space.">
-    <meta property="og:image" content="https://gacolstudio.github.io/images/art14.jpg">
-    <meta property="og:url" content="https://gacolstudio.github.io/">
+    <meta property="og:image" content="https://gacolstudio.com/images/art14.jpg">
+    <meta property="og:url" content="https://gacolstudio.com/">
     
     <title>GA Col Studio | Fine Abstract Art & Digital Boutique</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+
+    <!-- JSON-LD Local Business & Art Gallery Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ArtGallery",
+      "name": "GA Col Studio",
+      "image": "https://gacolstudio.com/images/art14.jpg",
+      "@id": "https://gacolstudio.com",
+      "url": "https://gacolstudio.com",
+      "telephone": "+1-336-941-8889",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Elkin Area",
+        "addressLocality": "Elkin",
+        "addressRegion": "NC",
+        "postalCode": "28621",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 36.2454,
+        "longitude": -80.8492
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://www.pinterest.com/grettaprevette4"
+      ]
+    }
+    </script>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://gacolstudio.com"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Collection",
+        "item": "https://gacolstudio.com/#gallery"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Toolkit",
+        "item": "https://gacolstudio.com/#toolkit"
+      }]
+    }
+    </script>
 </head>
 <body>
 
@@ -365,6 +432,24 @@
             </form>
         </div>
     </section>
+
+    <!-- CONTACT VIEW -->
+<main id="view-contact" class="view" style="display:none;">
+    <section id="contact">
+        <div class="contact-card">
+            <h2>Visit the Studio Area</h2>
+            <!-- Google Maps Embed for Elkin, NC -->
+            <div class="map-container" style="margin-bottom: 20px; border: 1px solid #222;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m12!1m3!1d12882.527376046736!2d-80.8576426315579!3d36.24831633519808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8851756540c9509d%3A0xe549557458097f4a!2sElkin%2C%20NC%2028621!5e0!3m2!1sen!2sus!4v1711234567890!5m2!1sen!2sus" 
+                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <h2>Inquire About a Piece</h2>
+            <p>Contact: <a href="mailto:studio@gacolstudio.com">studio@gacolstudio.com</a></p>
+            <!-- FORM CODE HERE -->
+        </div>
+    </section>
+</main>
 
     <section class="partnership-bar">
         <div class="volt-container">
