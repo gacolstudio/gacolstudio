@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gacolstudio.com/sitemap.xml
